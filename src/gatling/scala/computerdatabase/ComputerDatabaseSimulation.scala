@@ -25,9 +25,10 @@ class ComputerDatabaseSimulation extends Simulation {
           css("a:contains('#{searchComputerName}')", "href").saveAs("computerUrl")
         ),
       pause(1),
-      http("Select")
+      exec(http("Select")
         .get("#{computerUrl}")
         .check(status.is(200))
+      ),
       pause(1)
   )
 
