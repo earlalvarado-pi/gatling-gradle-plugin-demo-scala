@@ -30,6 +30,6 @@ class publicEndpointTest extends Simulation {
   val users = scenario("Users").exec(postQuestions)
 
   setUp(
-    users.inject(rampUsers(1000).during(100)),
+    users.inject(rampUsers(500).during(100)),
   )
 }
