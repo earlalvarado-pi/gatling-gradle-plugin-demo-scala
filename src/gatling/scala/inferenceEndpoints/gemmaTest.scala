@@ -3,15 +3,15 @@ package inferenceEndpoints
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class publicEndpointTest extends Simulation {
+class gemmaTest extends Simulation {
 
-  val feeder = csv("search.csv").random
-  val questionsFeeder = csv("questions.csv").random
+  val feeder = csv("gemma.csv").random
+
   val defaultEndpoint= ""
   val endpoint = System.getProperty("endpointUrl", defaultEndpoint)
 
   val postQuestions= scenario("Post JSON Data")
-    .feed(questionsFeeder)
+    .feed(feeder)
     .exec(
       http("PostRequest")
         .post(endpoint)
@@ -19,11 +19,10 @@ class publicEndpointTest extends Simulation {
         .header("Accept", "application/json")
         //.header("Authorization", "Bearer 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")
         .body(StringBody("""{
-                           "inputs": {
-                             "context": "${Answer}",
-                             "question": "What is my name?"
-                           }
+                              "inputs": "${Sentence}",
+                              "parameters": {}
                          }""")).asJson
+
         .check(status.is(200))
     )
 
