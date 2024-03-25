@@ -1,0 +1,4 @@
+RUN	inferenceEndpoints.gemmaTest	gemmatest	1711383408573	 	3.10.4
+USER	Users	START	1711383409551
+REQUEST		PostRequest	1711383409571	1711383419717	KO	i.n.c.ConnectTimeoutException: connection timed out after 10000 ms: xvlq1jm0cq2o852s.us-east-1.aws.endpoints.huggingface.cloud/10.0.0.23:443
+USER	Users	END	1711383419723
