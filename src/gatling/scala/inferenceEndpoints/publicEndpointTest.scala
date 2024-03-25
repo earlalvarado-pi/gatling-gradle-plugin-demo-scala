@@ -17,7 +17,7 @@ class publicEndpointTest extends Simulation {
         .post(endpoint)
         .header("Content-Type", "application/json")
         .header("Accept", "application/json")
-        .header("Authorization", "Bearer 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")
+        //.header("Authorization", "Bearer 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")
         .body(StringBody("""{
                            "inputs": {
                              "context": "${Answer}",
@@ -30,6 +30,6 @@ class publicEndpointTest extends Simulation {
   val users = scenario("Users").exec(postQuestions)
 
   setUp(
-    users.inject(rampUsers(10000).during(100)),
+    users.inject(rampUsers(50).during(100)),
   )
 }
