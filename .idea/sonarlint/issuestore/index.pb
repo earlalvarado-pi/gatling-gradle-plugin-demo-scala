@@ -13,3 +13,5 @@ d
 4src/gatling/scala/inferenceEndpoints/llama2Test.java,0\1\01ee0ea3bcfe6b752d7094c9e58a8066235ac932
 e
 5src/gatling/scala/inferenceEndpoints/llama2Test.scala,f\e\feedd8daefb27e5c5487d73265e27e21d6947da3
+g
+7src/gatling/scala/inferenceEndpoints/encoreSMTest.scala,3\e\3e8c00839a76fc01b0bf32fe76dfd460c03ef2ac

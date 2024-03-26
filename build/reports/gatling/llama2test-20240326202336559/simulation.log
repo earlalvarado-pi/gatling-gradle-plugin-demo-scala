@@ -1,0 +1,4 @@
+RUN	inferenceEndpoints.llama2Test	llama2test	1711484616559	 	3.10.4
+USER	Users	START	1711484617453
+REQUEST		PostRequest	1711484617471	1711484617996	KO	status.find.is(200), but actually found 400
+USER	Users	END	1711484618013

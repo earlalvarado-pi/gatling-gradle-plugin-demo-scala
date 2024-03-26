@@ -1,0 +1,4 @@
+RUN	inferenceEndpoints.encoreSMTest	encoresmtest	1711484951479	 	3.10.4
+USER	Users	START	1711484952302
+REQUEST		PostRequest	1711484952322	1711484952777	KO	status.find.is(200), but actually found 400
+USER	Users	END	1711484952796
