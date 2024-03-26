@@ -20,7 +20,7 @@ class llama2Test extends Simulation {
         .post(endpoint)
         .header("Content-Type", "application/json")
         .header("Accept", "application/json")
-        //.header("Authorization", "Bearer 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")
+        .header("Authorization", "Bearer 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")
         .body(StringBody("""{
                              "inputs": "${Sentence}",
                              "parameters": {}
