@@ -9,3 +9,7 @@ m
 =src/gatling/scala/inferenceEndpoints/publicEndpointTest.scala,a\6\a67613fa4d21e7f87256db9cf347aaf6f567690e
 d
 4src/gatling/scala/inferenceEndpoints/gemmaTest.scala,4\7\478c82a1f1f81629f69d01c9d508f87925274763
+d
+4src/gatling/scala/inferenceEndpoints/llama2Test.java,0\1\01ee0ea3bcfe6b752d7094c9e58a8066235ac932
+e
+5src/gatling/scala/inferenceEndpoints/llama2Test.scala,f\e\feedd8daefb27e5c5487d73265e27e21d6947da3
