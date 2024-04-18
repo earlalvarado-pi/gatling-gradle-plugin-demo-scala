@@ -1,0 +1,4 @@
+RUN	inferenceEndpoints.robertaTest	robertatest	1713388030672	 	3.10.4
+USER	Users	START	1713388031505
+REQUEST		PostRequest	1713388031569	1713388031608	KO	status.find.is(200), but actually found 500
+USER	Users	END	1713388031643
