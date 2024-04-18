@@ -1,0 +1,4 @@
+RUN	inferenceEndpoints.robertaTestPDP	robertatestpdp	1713460069294	 	3.10.4
+USER	Users	START	1713460070257
+REQUEST		PostRequest	1713460070332	1713460130332	KO	Request timeout to 10.0.0.26/10.0.0.26:8088 after 60000 ms
+USER	Users	END	1713460130347
