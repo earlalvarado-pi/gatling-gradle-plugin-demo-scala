@@ -17,3 +17,5 @@ i
 9src/gatling/scala/inferenceEndpoints/robertaTestPDP.scala,c\e\cedf0314a8dc73b645a53e4ec8cd7f570902c436
 j
 :src/gatling/scala/inferenceEndpoints/encoreSMTestPDP.scala,8\9\89c5daee7db5027fa6db57146b9e425ada440a90
+g
+7src/gatling/scala/inferenceEndpoints/gemmaTestPDP.scala,2\1\21d459cc73052ed37b380dc83172bd73fd8810c5
