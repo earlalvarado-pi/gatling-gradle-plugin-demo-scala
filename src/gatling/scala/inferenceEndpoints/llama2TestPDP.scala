@@ -22,7 +22,7 @@ class llama2TestPDP extends Simulation {
         .header("Accept", "application/json")
         //.header("Authorization", "Bearer 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")
         .body(StringBody("""{
-                             "inputs": "${Sentence}"
+                             "input": "${Sentence}"
                            }
                          }""")).asJson
         .check(status.is(200))
