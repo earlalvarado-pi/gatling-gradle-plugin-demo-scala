@@ -3,9 +3,10 @@ package inferenceEndpoints
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class gemmaTestPDP extends Simulation {
+class llama2TestPDP extends Simulation {
 
-  val feeder = csv("gemma.csv").random
+  val feeder = csv("sentences.csv").random
+
   val defaultEndpoint= ""
   val endpoint = System.getProperty("endpointUrl", defaultEndpoint)
 
@@ -21,8 +22,7 @@ class gemmaTestPDP extends Simulation {
         .header("Accept", "application/json")
         //.header("Authorization", "Bearer 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")
         .body(StringBody("""{
-                             "inputs": "${Sentence}",
-                             "parameters": {}
+                             "inputs": "${Sentence}"
                            }
                          }""")).asJson
         .check(status.is(200))

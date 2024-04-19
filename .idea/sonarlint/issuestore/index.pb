@@ -19,3 +19,5 @@ j
 :src/gatling/scala/inferenceEndpoints/encoreSMTestPDP.scala,8\9\89c5daee7db5027fa6db57146b9e425ada440a90
 g
 7src/gatling/scala/inferenceEndpoints/gemmaTestPDP.scala,2\1\21d459cc73052ed37b380dc83172bd73fd8810c5
+h
+8src/gatling/scala/inferenceEndpoints/llama2TestPDP.scala,3\8\38c54f90e3c16821266c0f22f4da2057357a3c3b
