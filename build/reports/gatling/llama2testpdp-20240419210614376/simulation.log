@@ -1,0 +1,4 @@
+RUN	inferenceEndpoints.llama2TestPDP	llama2testpdp	1713560774376	 	3.10.4
+USER	Users	START	1713560775299
+REQUEST		PostRequest	1713560775366	1713560777170	KO	status.find.is(200), but actually found 502
+USER	Users	END	1713560777204
