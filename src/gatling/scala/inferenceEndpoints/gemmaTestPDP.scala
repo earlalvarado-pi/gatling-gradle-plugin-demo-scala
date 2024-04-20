@@ -21,9 +21,7 @@ class gemmaTestPDP extends Simulation {
         .header("Accept", "application/json")
         //.header("Authorization", "Bearer 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")
         .body(StringBody("""{
-                             "inputs": "${Sentence}",
-                             "parameters": {}
-                           }
+                             "input": "${Sentence}"
                          }""")).asJson
         .check(status.is(200))
     )
